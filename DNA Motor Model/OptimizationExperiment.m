@@ -10,13 +10,15 @@ data = zeros(N^v, v + m);
 counter = 1;
 for n = linspace(2, 20 ,N)
     for ne = linspace(2, 20 ,N)
-        for n = linspace(2, 20 ,N)
-            for n = linspace(2, 20 ,N)
-                for n = linspace(2, 20 ,N)
+        for brownianFrequency = linspace(2, 20 ,N)
+            for density = linspace(2, 20 ,N)
+                for nSpan = linspace(2, 20 ,N)
                     % add in the variables from each
                     data(counter, 1) = n;
                     data(counter, 2) = ne;
-                    
+                    data(counter, 3) = brownianFrequency;
+                    data(counter, 4) = density;
+                    data(counter,5) = nSpan;
                     % call SimulateMotorDNA function
                     [t, p] = SimulateMotorDNA(n, ne, brownianFrequency, density, nSpan);
                     
