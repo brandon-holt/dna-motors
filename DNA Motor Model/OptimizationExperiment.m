@@ -1,5 +1,5 @@
 % define N, 
-N = 3000000000000000000000000000; % the number of values for each variable
+N = 3; % the number of values for each variable
 m = 3; % number of metrics
 v = 5; % number of variables
 
