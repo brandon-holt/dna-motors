@@ -24,8 +24,8 @@ for n = linspace(2, 20 ,N)
                     
                     % calculate alpha, speed, and processivity
                     alpha = []; % calculate alpha
-                    speed = [];
-                    processivity = [];
+                    speed = GetSpeed(p,t(length(t)));
+                    processivity = t(length(t));
                     
                     % add to data matrix
                     data(counter, v + 1) = alpha;
