@@ -7,7 +7,7 @@ ma = ma.addAll(tracks);
 
 ma = ma.computeMSD;
 
-ma = ma.fitLogLogMSD(0.50);
+ma = ma.fitLogLogMSD(0.60);
 
 alpha = ma.loglogfit.alpha;
 
