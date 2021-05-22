@@ -41,7 +41,7 @@ for n = linspace(2, 6 ,N)
 end
 
 % calculate pca
-
+coef = pca(data);
 % pick top 2 and bottom based on feature importance
 
 % plot relationship with 3 metrics
