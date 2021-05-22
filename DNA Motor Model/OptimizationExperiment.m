@@ -8,11 +8,11 @@ data = zeros(N^v, v + m);
 
 % nested for loop for each variable
 counter = 1;
-for n = linspace(2, 20 ,N)
-    for ne = linspace(2, 20 ,N)
-        for brownianFrequency = linspace(2, 20 ,N)
-            for density = linspace(2, 20 ,N)
-                for nSpan = linspace(2, 20 ,N)
+for n = linspace(2, 6 ,N)
+    for ne = linspace(2, 6 ,N)
+        for brownianFrequency = linspace(2, 6 ,N)
+            for density = linspace(2, 6 ,N)
+                for nSpan = linspace(2, 6 ,N)
                     % add in the variables from each
                     data(counter, 1) = n;
                     data(counter, 2) = ne;
@@ -23,7 +23,7 @@ for n = linspace(2, 20 ,N)
                     [t, p] = SimulateMotorDNA(n, ne, brownianFrequency, density, nSpan);
                     
                     % calculate alpha, speed, and processivity
-                    alpha = []; % calculate alpha
+                    alpha = Getalpha(t,p); % calculate alpha
                     speed = GetSpeed(p,t(length(t)));
                     processivity = t(length(t));
                     
