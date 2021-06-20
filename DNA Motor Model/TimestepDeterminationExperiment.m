@@ -9,3 +9,4 @@ ten = DetermineTimestep(10);
 one = DetermineTimestep(1);
 onetenth = DetermineTimestep(0.1);
 
+onehundreth = DetermineTimestep(0.01);
