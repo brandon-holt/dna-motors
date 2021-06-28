@@ -7,15 +7,14 @@ brownianFrequency = 50;
 density = 0.5;
 nSpan = 8;
 % Initializing input matrix
-N = 100; %number of values for each variable
+N = 50; %number of values for each variable
 v = 3; %number of k values
 m = 2; %number of outputs 
 x = 5; % number of repetitions per set of parameters
 data = zeros(N*v,v+m);
 counter = 1;
-
+preavgsv = zeros(m,x);
 for Kon = logspace(-2,3,N)
-    preavgsv = zeros(m,x);
     internalcounter = 1;
     for i = 1:x
         [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,Kon,10,10,timestep);
@@ -38,7 +37,6 @@ for Kon = logspace(-2,3,N)
 end
 
 for Koff = logspace(-2,3,N)
-    preavgsv = zeros(m,x);
     internalcounter = 1;
     for i = 1:x
         [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,10,Koff,10,timestep);
@@ -60,7 +58,6 @@ for Koff = logspace(-2,3,N)
 end
 
 for Kcat = logspace(-2,3,N)
-    preavgsv = zeros(m,x);
     internalcounter = 1;
     for i = 1:x
         [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,10,10,Kcat,timestep);

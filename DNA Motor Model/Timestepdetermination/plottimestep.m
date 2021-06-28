@@ -1,3 +1,7 @@
+%Taking each of the results and averaging them according to whatever x is
+%in the determine timestep function
+
+
 %Figure 1-3 is Kon, Koff, Kcat vs speed. Figure 4-6 is Kon, Koff, Kcat vs
 %processivity
 x = logspace(-2,3,50);
