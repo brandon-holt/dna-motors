@@ -7,7 +7,7 @@ brownianFrequency = 50;
 density = 0.5;
 nSpan = 8;
 % Initializing input matrix
-N = 100; %number of values for each variable
+N = 50; %number of values for each variable
 v = 3; %number of k values
 m = 2; %number of outputs 
 x = 5; % number of repetitions per set of parameters
@@ -79,8 +79,8 @@ for Kcat = logspace(-2,3,N)
     data(counter, 5) = processivity;
     counter = counter + 1;
 end
-end
 
+end
 
 
 

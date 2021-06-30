@@ -19,11 +19,13 @@ for i = [50,100,150]
     y1 = one(L:i,speed);
     plot(x,y1,'Color', 'red')
 
-    y0 = onetenth(L:i,speed);
-    plot(x,y0,'Color', 'green')
+    y01 = onetenth(L:i,speed);
+    plot(x,y01,'Color', 'green')
 
-    y0 = onehundreth(L:i,speed);
-    plot(x,y0,'Color', 'black')
+    y001 = onehundreth(L:i,speed);
+    plot(x,y001,'Color', 'black')
+    y0001 = onethousandth(L:i,speed);
+    plot(x,y0001,'Color', 'magenta')
     hold off
     L = i+1;
     counter = counter +1;
@@ -39,11 +41,14 @@ for i = [50,100,150]
     y1 = one(L:i,processivity);
     plot(x,y1,'Color', 'red')
 
-    y0 = onetenth(L:i,processivity);
-    plot(x,y0,'Color', 'green')
+    y01 = onetenth(L:i,processivity);
+    plot(x,y01,'Color', 'green')
 
-    y0 = onehundreth(L:i,processivity);
-    plot(x,y0,'Color', 'black')
+    y001 = onehundreth(L:i,processivity);
+    plot(x,y001,'Color', 'black')
+    
+    y0001 = onethousandth(L:i,speed);
+    plot(x,y0001,'Color', 'magenta')
     hold off
     L = i+1;
     counter = counter +1;
