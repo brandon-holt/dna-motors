@@ -5,7 +5,7 @@ function [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,Kon
 
     Kall = [Kon,Koff,Kcat];
     timeStep = expinv(0.01,1/max(Kall));
-    tMax = timeStep * 6000; % s, total time simulated
+    tMax = timeStep * 60000; % s, total time simulated
 
     DNA = ones(n,n); % 0 = unbound, 1 = bound, 2 = gone
     RNA = zeros(N,N); % 0 = unbound, 1 = bound, 2 = gone
