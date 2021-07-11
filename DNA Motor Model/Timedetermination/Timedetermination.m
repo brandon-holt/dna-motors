@@ -30,7 +30,7 @@ for n = round(linspace(5, 15 ,N))
                                     data(counter, 7) = Koff;
                                     data(counter, 8) = Kcat;
                                     % call SimulateMotorDNA function
-                                    [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,Kon,Koff,Kcat,0.01);
+                                    [t, p] = NSimulateMotorDNA(n, ne, brownianFrequency, density, nSpan,Kon,Koff,Kcat);
 
                                     % calculate alpha, speed, and processivity
                                     
