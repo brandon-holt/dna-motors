@@ -37,7 +37,7 @@ for n = round(linspace(5, 15 ,N))
                                     speed = GetSpeed(p,t(length(t)));
                                     processivity = t(length(t));
                                     % calculate alpha
-                                    alpha = Getalpha(t,p); 
+                                    alpha = newgetAlpha(t,p); 
                                     % add to data matrix
                                     data(counter, v ) = alpha;
                                     data(counter, v + 1) = speed;
@@ -55,3 +55,5 @@ for n = round(linspace(5, 15 ,N))
         end
     end
 end
+
+
